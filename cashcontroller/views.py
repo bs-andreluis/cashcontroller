@@ -29,12 +29,12 @@ def user_login(request):
     user = authenticate(username=usuario, password=senha)
     if user:
         login(request, user)
-        return redirect('/wallet')
+        return redirect('/ase')
     else:
         print('senha/user invalido')
 
     return render(request, 'entrar.html')
     
 def my_wallet(request):
-    if request.user.is_authenticated():
-        return render(request, 'wallet.html')
+    #if request.user.is_authenticated():
+    return render(request, 'base.html')
