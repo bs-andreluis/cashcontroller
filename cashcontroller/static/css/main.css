@@ -1,0 +1,277 @@
+
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  font-size: 0.875rem;
+  opacity: 1;
+  overflow-y: scroll;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;  
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/* Layout for admin dashboard skeleton */
+
+.wrapper {
+  align-items: stretch;
+  display: flex;
+  width: 100%;
+
+}
+
+#sidebar {
+  max-width: 264px;
+  min-width: 264px;
+  background: #938BF0;
+  transition: all 0.35s ease-in-out;
+}
+
+.main {
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 0;
+  overflow: hidden;
+  transition: all 0.35s ease-in-out;
+  width: 100%;
+  background: #5f53e9;
+}
+
+/* Side Bar Elements Style*/
+
+.sidebar-logo {
+  padding: 1.15rem;
+
+}
+
+.sidebar-logo a{
+  color: #e9ecef;
+  font-size: 1.15rem;
+  font-weight:  600;
+}
+
+.sidevar-nav {
+  flex-grow: 1;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.sidebar-header {
+  color: #e9ecef;
+  font-size: .75rem;
+  padding: 1.5rem 1.5rem .375rem;
+}
+
+a.sidebar-link{
+  padding: .625rem 1.625rem;
+  color: #e9ecef;
+  position: relative;
+  display: block;
+  font-size: 0.875rem;
+}
+
+/* Cards styles */
+.card-custom .icon {
+  color: rgb(255, 255, 255); /* Define a cor para os ícones */
+}
+
+
+.bg-green {
+  background-color: green;
+  color: white;
+}
+
+.bg-red {
+  background-color: rgba(166, 19, 5, 0.767);
+  color: white;
+}
+
+.bg-blue {
+  background-color: rgb(0, 162, 255);
+  color: white;
+}
+.card .icon {
+  font-size: 1.5rem;
+}
+.card-title {
+  font-weight: bold;
+}
+.card-text {
+  font-size: 1.5rem;
+  color: white;
+} 
+
+/* Forms transactions styles*/
+
+.expense-income {
+    
+  background-color: #5f53e9;
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+  display: flex;
+  font-size: 24px;
+  color: #fff;
+  font-family: Poppins;
+justify-content: center;
+align-items: center;
+height: 100vh;
+
+
+}
+
+.transaction-form-box{
+  background-color:#ffffff30;
+  height: 640px;
+  width: 520px;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  color: #fff;
+  font-family: Poppins;
+  margin-left: 30%;
+}
+
+
+.incomes-form-box{
+  background-color:#ffffff30;
+  height: 30px;
+  width: 520px;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  color: #fff;
+  font-family: Poppins;
+  margin-left: 30%;
+}
+
+
+.heading{
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 20px;
+  
+
+}
+b{
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 10px;
+  padding: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+.inp{
+ /* margin-top: 10px; */
+margin: 10px;
+  height: 50px;
+  width: 500px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #ffffff30;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+}
+.inp::placeholder{
+  color: #ffffffa5;
+  
+}
+.submit-button{
+  margin-top: 20px;
+  margin-left: 10px;
+  height: 50px;
+  width: 500px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #938BF0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.submit-button:hover{
+  background-color: #ffff00bc;
+  color: #fff;
+}
+.line{
+
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  height: 1px;
+  width: 500px;
+  border: none;
+  background-color: #ffffff;
+  border: 0px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  
+}
+.anc{
+  text-decoration: none;
+  color: #ffff00bc;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 45%;
+  padding: 0;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.signup-box1{
+  background-color:#ffffff30;
+  height: 555px;
+  width: 520px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+.anca{
+  font-size: 25px;
+    margin-top: 7px;
+    /* margin-left: -68px; */
+    margin-right: -41px;
+}
+a:hover{
+  color: #ffff00bc;
+}
+.heads{
+  display: flex;
+    justify-content: space-evenly;
+}
+.ancaa{
+  font-size: 25px;
+  margin-top: 29px;
+  margin-left: -40px;
+}
+
+.completed{
+color: #c5aeff;
+text-decoration: line-through;
+}

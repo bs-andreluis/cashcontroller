@@ -18,9 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cadastro', views.signup),
-    path('entrar', views.user_login),
-
+    path('cadastro', views.signup, name='signup'),
+    path('entrar', views.user_login, name='user_login'),
+    path('carteira', views.my_wallet, name='dashboard'),  
+    path('gastos', views.expenses, name='expenses'),
+    path('ganhos', views.incomes, name='incomes')
 ]

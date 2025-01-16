@@ -1,0 +1,17 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<div class="row">
+    {% for card in cards %}
+    <div class="col-md-4">
+        <div class="card card-custom text-center shadow-sm mb-4 {{ card.color_class }}">
+            <div class="card-body">
+                <div class="icon mb-2">
+                    <i class="{{ card.icon }} text-primary" style="font-size: 2rem;"></i>
+                </div>
+                <h5 class="card-title">{{ card.title }}</h5>
+                <p class="card-text text-muted">{{ card.value }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
