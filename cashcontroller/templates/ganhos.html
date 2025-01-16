@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+{% block content %}
+    <div class="expenses-income">
+        <div class ="transaction-form-box">
+            <form method ="post">
+                {% csrf_token %}
+                <div class = "heading">
+                    Insira seu ganho
+                </div>
+                <div class="line">
+                </div>
+                <div class="field">
+                    <b>Fonte</b>
+                    <input type="text" required class="inp" name="ft">
+                </div>         
+                <div class="field">
+                    <b>Data</b>
+                    <input type="date" required class="inp" name="dt">
+                </div>
+                <div class="field">
+                    <b>Valor</b>
+                    <input type="number" step="0.01" class="inp" name="vlr" required>
+                </div>
+                <div class="field">
+                    <input type="submit"  class="submit-button" value="OK">
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
